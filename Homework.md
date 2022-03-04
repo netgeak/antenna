@@ -18,13 +18,25 @@
 
 ### Mission 3
 - Command : nslookup www.theforce.net 
-- Results : canonical name = theforce.net 
-- Explanation :  
+- Results : canonical name = theforce.net  
+- Explanantion : The domain resistance.theforce.net isn’t being found because it doesn’t have an alias associated with theforce.net.
+  Add resistance.theforce.net as a canonical name
+  Non-authoritative answer:
+
+www.theforce.net	   canonical name = theforce.net
+
+resistance.theforce.net   canonical name = theforce.net 
 
 ### Mission 4
 - Command : nslookup -type=soa princessleia.com 
 - Results : Address: 34.102.136.180 
-- Explanation :
+- Explanantion : 	Add ns2.galaxybackup.com to the DNS Record:
+
+princessleia.site	nameserver = ns25.domaincontrol.com
+
+princessleia.site	nameserver = ns26.domaincontrol.com
+
+princessleia.site	nameserver = ns2.galaxybackup.com
 
 ### Mission 5
 - OSPF : Batuu -> D -> C -> E -> F -> J -> K -> O -> R -> Q -> T -> V -> Jedha
@@ -38,4 +50,4 @@
         - 00:0f:66:e3:e4:01 :: 254.227.228.1
 
 ### Mission 7
-- File is located 'Unit_9/img/starwars.png'
+- Screenshots in folder
