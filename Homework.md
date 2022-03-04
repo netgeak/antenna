@@ -9,12 +9,12 @@
   - aspmx3.googlemail.com 
   - alt2.aspmx.l.google.com
   - aspmx.l.google.com 
-- Explanation : The resistance isn't recieving email, as their DNS is still resolving to (presumably) their old Mail Exchange servers.  This can be corrected by reconfiguring their mail service to use the new servers.
+- Answer : The resistance isn't recieving email, as their DNS is still resolving to (presumably) their old Mail Exchange servers.  This can be corrected by reconfiguring their mail service to use the new servers.
           
 ### Mission 2
 - Command : nslookup -type=mx theforce.net
 - Results : v=spf1 a mx mx:smtp.secureserver.net include: aspmx.googlemail.com ip4:104.156.250.80 ip4:45.63.15.159 ip4:45.63.4.215
-- Explanation : The Force is using a spam and spoof mitigation client with their ipv4 addresses set to their old ip addresses.  They will need to update their spf configuration to allow their new address to authenticate with their mail server and disallow their old ip addresses to further mitigate spoofing.
+- Answer : The Force is using a spam and spoof mitigation client with their ipv4 addresses set to their old ip addresses.  They will need to update their spf configuration to allow their new address to authenticate with their mail server and disallow their old ip addresses to further mitigate spoofing.
 
 ### Mission 3
 - Command : nslookup www.theforce.net 
@@ -30,7 +30,7 @@ resistance.theforce.net   canonical name = theforce.net
 ### Mission 4
 - Command : nslookup -type=soa princessleia.com 
 - Results : Address: 34.102.136.180 
-- Explanantion : 	Add ns2.galaxybackup.com to the DNS Record:
+- Answer  : 	Add ns2.galaxybackup.com to the DNS Record:
 
 princessleia.site	nameserver = ns25.domaincontrol.com
 
