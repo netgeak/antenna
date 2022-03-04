@@ -1,4 +1,4 @@
-# Week 9 Networks Fundamentals II: In a Network Far, Far Away! 
+# Week 9 - Network Fundamentals II: In a Network Far, Far Away! 
 
 
 ### Mission 1
